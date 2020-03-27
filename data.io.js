@@ -11,6 +11,7 @@
   function Resource(name, socket) {
     this.name = name;
     this.socket = socket.io.socket('/' + this.name);
+    console.log('test')
   }
 
   Resource.prototype.sync = function (action, data, options, callback) {
